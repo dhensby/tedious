@@ -41,15 +41,7 @@ const BigInt: DataType = {
       return null;
     }
 
-    if (typeof value !== 'number') {
-      value = Number(value);
-    }
-
-    if (isNaN(value)) {
-      throw new TypeError('Invalid number.');
-    }
-
-    if (value < Number.MIN_SAFE_INTEGER || value > Number.MAX_SAFE_INTEGER) {
+    if (typeof value === 'number' && (value < Number.MIN_SAFE_INTEGER || value > Number.MAX_SAFE_INTEGER)) {
       throw new TypeError(`Value must be between ${Number.MIN_SAFE_INTEGER} and ${Number.MAX_SAFE_INTEGER}, inclusive.  For smaller or bigger numbers, use VarChar type.`);
     }
 
