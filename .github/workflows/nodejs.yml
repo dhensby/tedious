@@ -93,6 +93,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -102,6 +103,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -111,6 +113,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -120,6 +123,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -129,6 +133,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -138,6 +143,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -277,6 +283,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -286,6 +293,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -295,6 +303,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -304,6 +313,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -313,6 +323,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -322,6 +333,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -366,6 +378,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -413,6 +426,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -460,6 +474,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
@@ -507,6 +522,7 @@ jobs:
       run: npx nyc --reporter=lcov npm run test-integration
 
     - uses: codecov/codecov-action@v4
+      if: ${{ envs.CODECOV_TOKEN && !cancelled() }}
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
 
